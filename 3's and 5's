@@ -1,0 +1,29 @@
+"""
+Multiples of 3 and 5
+Problem 1
+
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+Find the sum of all the multiples of 3 or 5 below 1000
+"""
+counter = 0
+fiveX = 0
+while fiveX != 1000:
+	counter = counter + 1
+	fiveX= 5 * counter
+	fivesList =[0]
+	fivesList.append(fiveX)
+counter = 0
+threeY = 0
+while threeY != 1000:
+	counter = counter + 1
+	threeY = 3 * counter
+	threesList =[0]
+	threesList.append(threeY)
+
+
+fiveTotal = fivesList.remove(threesList)
+finalTotal= fiveTotal + threesList
+
+print(finalTotal)
+print(fiveTotal)
+print(threesList)
